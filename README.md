@@ -17,8 +17,8 @@ ClinDecisionAI is an Explainable AI-based clinical decision support system desig
 ## 🧰 Tech Stack
 
 Frontend: React / Next.js, Tailwind CSS
-Backend: Node.js
-Machine Learning: Python, Scikit-learn, SHAP / LIME
+Backend: Python
+Machine Learning: Scikit-learn, SHAP / LIME
 
 ---
 
@@ -34,24 +34,33 @@ Machine Learning: Python, Scikit-learn, SHAP / LIME
 
 ## ▶️ How to Run
 
-1. Clone the repository:
+### 1. Clone the repository
 
-```id="c8pkq3"
 git clone https://github.com/Sayanth104/ClinDecisionAI.git
 cd ClinDecisionAI
-```
 
-2. Install dependencies:
+---
 
-```id="r7r6oz"
+### 2. Run Frontend (Next.js)
+
 npm install
-```
-
-3. Run the application:
-
-```id="y8eqv3"
 npm run dev
-```
+
+Frontend runs at: http://localhost:3000
+
+---
+
+### 3. Run Backend (Python)
+
+cd backend
+pip install -r requirements.txt
+python main.py
+
+---
+
+## ⚠️ Note
+
+Make sure both frontend and backend are running at the same time for full functionality.
 
 ---
 
@@ -59,7 +68,7 @@ npm run dev
 
 * app/ – frontend pages
 * components/ – UI components
-* backend/ – server logic
+* backend/ – Python backend
 * public/ – static files
 * styles/ – styling
 
